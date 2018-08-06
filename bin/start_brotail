@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+export BROTAIL_HOME=${BROTAIL_HOME:-/opt/brotail}
+cd ${BROTAIL_HOME} || { echo "cannot cd to ${BROTAIL_HOME}"; exit 1; };
+export PYTHONPATH="${PYTHONPATH}:${BROTAIL_HOME}/lib"
+PYTHONPATH="${PYTHONPATH}:${BROTAIL_HOME}/lib" python3 bin/brotail -b
+echo "started brotail"

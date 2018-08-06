@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+cd ${BROTAIL_HOME:-/opt/brotail} || { echo "cannot cd to ${BROTAIL_HOME:-/opt/brotail}"; exit 1; };
+bin/brotail -k
